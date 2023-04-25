@@ -294,3 +294,10 @@
 #tray {
     background: #434C5E;
 }
+#custom-power,
+#custom-arch {
+    padding-top: 0.0em;
+    padding-bottom: 0.0em;
+    margin: 0.0em 0.0em 0.0em 0.0em;
+    font-size: 2em;
+}

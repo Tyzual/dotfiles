@@ -7,8 +7,9 @@
     "spacing": 4, // Gaps between modules (4px)
 
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces"],
-    "modules-right": ["tray", "network", "pulseaudio", "backlight", "battery", "clock", "custom/power"],
+    "modules-left": ["custom/arch", "wlr/workspaces"],
+    // "modules-center": ["cava"],
+    "modules-right": ["tray", "network", "pulseaudio", "backlight", "bluetooth", "battery", "clock", "custom/power"],
     // Modules configuration
     "tray": {
         // "icon-size": 21,
@@ -75,4 +76,18 @@
     	"format": "",
     	"on-click": "$HOME/.config/waybar/script/power", 
     },
+    "bluetooth": {
+	"format": " {status}",
+	"format-connected": " {device_alias}",
+	"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+	// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+    },
+    "custom/arch": {
+        "format": "  ",
+        "tooltip": false
+    }
 }
