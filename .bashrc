@@ -4,6 +4,7 @@ alias ls='ls --color=auto'
 alias ll='ls -lF --color=auto'
 alias grep='grep --color=auto'
 alias sudo='sudo -E'
+alias ..='cd ..'
 
 if [ -f /usr/share/bash-completion/bash-completion ]; then
 	source /usr/share/bash-completion/bash-completion
