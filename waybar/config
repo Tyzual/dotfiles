@@ -68,9 +68,27 @@
         "on-click": "pavucontrol"
     },
     "wlr/workspaces": {
-      "format": "{name}",
+      // "format": "{name}",
+      "format": "{icon}",
       "on-click": "activate",
-      "sort-by-number": true
+      "sort-by-number": true,
+      "persistent_workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      },
+      "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        // "urgent": "",
+        // "active": "",
+        "default": ""
+      }
     },
     "custom/power": {
       "format": "",
